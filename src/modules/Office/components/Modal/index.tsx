@@ -2,7 +2,7 @@ import React, { useCallback, useState, useImperativeHandle } from 'react';
 import { FiX } from 'react-icons/fi';
 import axios from 'axios';
 
-import Input from '../Input';
+import Input from '../../../../components/Input';
 import { Container } from './styles';
 
 export interface ModalHandles {

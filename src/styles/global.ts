@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
     --colorDark2: ${lighten(0.2, '#18191a')};
     --colorDark4: ${lighten(0.4, '#18191a')};
 
-
+    --colorBlue: #2c88ff;
     --colorGreen: #1cb508;
   }
 

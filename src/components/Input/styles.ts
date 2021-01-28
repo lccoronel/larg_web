@@ -1,18 +1,20 @@
 import styled from 'styled-components';
-import { shade } from 'polished';
+import { lighten } from 'polished';
 
-export const Container = styled.div`
-  border: 0;
-  border-radius: 5px;
-  height: 40px;
-  padding: 25px 12px;
-  background-color: ${shade(0.2, '#6842c2')};
+export const Container = styled.label`
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 14px;
 
   input {
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid ${lighten(0.3, '#242526')};
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 12px;
     color: #fff;
-    background: transparent;
-    margin-left: 10px;
   }
 `;

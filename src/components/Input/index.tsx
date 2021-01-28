@@ -1,18 +1,18 @@
 import React, { InputHTMLAttributes } from 'react';
-import { IconBaseProps } from 'react-icons';
 
 import { Container } from './styles';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-  name: string;
-  icon?: React.ComponentType<IconBaseProps>;
+  label: string;
+  idLabel: string;
+  inputRow?: boolean;
 }
 
-const Input: React.FC<InputProps> = ({ icon: Icon, ...rest }) => {
+const Input: React.FC<InputProps> = ({ label, idLabel, inputRow, ...rest }) => {
   return (
-    <Container>
-      {Icon && <Icon size={20} />}
-      <input {...rest} />
+    <Container htmlFor={idLabel} style={{ marginLeft: inputRow ? 20 : 0 }}>
+      {label}
+      <input type="text" id={idLabel} {...rest} />
     </Container>
   );
 };

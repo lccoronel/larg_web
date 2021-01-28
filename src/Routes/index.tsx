@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import SignIn from '../pages/SignIn';
+import SignIn from '../modules/SignIn';
 import Home from '../modules/Home';
 import Team from '../modules/Team';
 import Office from '../modules/Office';
