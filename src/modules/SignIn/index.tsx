@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Input from '../../components/Input';
 import { Container } from './styles';
 
@@ -6,14 +7,14 @@ const SignIn: React.FC = () => {
   return (
     <Container>
       <section>
-        <h4>WELCOME!</h4>
-        <p>Sign in to your account</p>
+        <h4>Bem vindo!</h4>
+        <p>Acesse sua conta</p>
       </section>
       <form>
         <Input idLabel="email" label="E-mail" />
         <Input idLabel="password" label="Password" />
 
-        <button type="button">Sign</button>
+        <button type="button">Entrar</button>
       </form>
     </Container>
   );

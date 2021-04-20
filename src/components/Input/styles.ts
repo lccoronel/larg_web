@@ -7,6 +7,7 @@ export const Container = styled.label`
   width: 100%;
   margin-top: 15px;
   font-size: 14px;
+  color: #000;
 
   input {
     margin-top: 10px;
@@ -15,6 +16,6 @@ export const Container = styled.label`
     padding: 10px;
     border-radius: 7px;
     font-size: 12px;
-    color: #fff;
+    color: --var(colorDark);
   }
 `;
